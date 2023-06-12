@@ -1,0 +1,113 @@
+  .terminal {
+    width: 70%;
+    height: 500px;
+    border-width: 1px;  
+    border-style: solid;
+    border-radius: 6px;
+    background-color: #454545;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-right: 20px; /* Agrega un espacio de 20px entre las terminales */
+    -webkit-box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.75); 
+    -moz-box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.75);    
+  }
+  
+  #black-arch{
+    background: url(BlackArch_logo.png);
+    background-size: cover;
+  }
+
+  #kali{
+    background: url(kali.jpg);
+    background-size: cover;
+  }
+
+  #debian{
+    background: url(debian.png);
+    background-size: cover;
+  }
+
+  #kali .terminal-window .user{
+    color: #4788e2;
+  }
+
+  #debian .terminal-window .user{
+    color: #cc0a44;
+  }
+
+  .terminal-window::after{
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .terminal .terminal-window {
+    padding: 15px;
+    font-weight: normal;  
+    font-family: "Courier New", Monaco, monospace;
+  }
+
+  .terminal .terminal-window .path {
+    margin-right: 10px;
+    color: #729fcf;
+  }
+
+  .terminal .terminal-window .user {
+    color: #e12121;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .terminal .terminal-window .menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: normal;
+  }
+
+  .terminal .terminal-window .menu a:hover {
+    font-weight: bold;
+  }
+
+  .terminal .terminal-window .cursor {
+    background-color: #FFFFFF;
+    animation: blink 1s steps(5, start) infinite;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+  }
+
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  @-webkit-keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .tarjetas {
+    color: white;
+    width: 80%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+
+span{
+  margin-top: 10px;
+}
+
+.dir{
+  font-weight: bold;
+  color: yellow;
+}

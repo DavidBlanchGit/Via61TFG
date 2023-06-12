@@ -1,0 +1,64 @@
+
+.botones{
+    -fx-text-fill: black;
+}
+
+.cerra:hover{
+    -fx-background-color:firebrick;
+    -fx-background-radius: 0 15 0 0;
+}
+
+.cerrarAyuda:hover{
+    -fx-background-color:firebrick;
+    -fx-background-radius: 0 15 0 0;
+    -fx-background-color:  #7b7b7b; 
+}
+
+.introducirID{
+    -fx-text-fill: white;
+}
+
+.minimizar:hover{
+    -fx-background-color: #4B4B4B; 
+}
+
+.chat{
+    -fx-background-color: #555555;
+    -fx-text-fill: white;
+}
+
+.botonesClaritos{
+    -fx-background-color: #303030;
+    -fx-background-radius: 15;
+}
+
+.botonesClaritos:hover{
+    -fx-background-color:#7b7b7b;
+}
+
+.panel{
+    -fx-background-color:  #363636;
+    -fx-background-radius:  15;
+    -fx-border-radius: 20;
+}
+
+.scroll-pane {
+    -fx-background-color:  #151515;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color:  #151515;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color:  #151515;
+    -fx-color:  #303030;
+}
+
+.scroll-pane .scroll-bar:hover {
+    -fx-background-color:  #151515;
+    -fx-color:  #303030;
+}
+
+
+

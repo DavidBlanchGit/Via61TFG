@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#arrastrar" prefHeight="694.0" prefWidth="812.0" style="-fx-background-color: #151515; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: #454545;" stylesheets="@../estilos/estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tfgfinal.Chat">
+   <children>
+      <ListView fx:id="chat" layoutX="15.0" layoutY="86.0" prefHeight="496.0" prefWidth="804.0" style="-fx-background-color: #151515; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="chat" />
+      <Pane layoutX="15.0" layoutY="591.0" prefHeight="89.0" prefWidth="804.0" style="-fx-background-color: #303030; -fx-border-width: 2; -fx-border-color: #000000; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TextField fx:id="mensajeParaEnviar" layoutX="18.0" layoutY="16.0" onKeyPressed="#enviar" prefHeight="57.0" prefWidth="768.0" promptText="Escribe un mensaje" style="-fx-background-color: #454545; -fx-background-radius: 10;" styleClass="introducirID">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <ImageView fitHeight="36.0" fitWidth="35.0" layoutX="736.0" layoutY="27.0" onMouseClicked="#enviarMensaje" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/flecha.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="29.0" prefHeight="46.0" prefWidth="804.0" style="-fx-background-color: #303030; -fx-border-width: 2; -fx-border-color: #000000; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fx:id="img" fitHeight="35.0" fitWidth="51.0" layoutX="29.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenPerfil">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../imagenes/perfil.jpg" />
+               </image>
+            </ImageView>
+            <Text fx:id="namePersona" fill="WHITE" layoutX="86.0" layoutY="31.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="0.0" text="Mustielo" wrappingWidth="95.84375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+         </children>
+      </Pane>
+      <Pane fx:id="cerra" layoutX="805.0" onMouseClicked="#cerra" prefHeight="29.0" prefWidth="28.0" styleClass="cerra">
+         <children>
+            <Text fill="WHITE" layoutX="10.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="scrollPane" layoutX="31.0" layoutY="77.0" prefHeight="502.0" prefWidth="776.0" stylesheets="@../estilos/estilo.css">
+         <content>
+            <Text fx:id="textito" fill="WHITE" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="736.13671875">
+               <font>
+                  <Font name="Consolas" size="26.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"tfgfinal","l":"Ajustes"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"tfgfinal","l":"CargaController"},{"p":"tfgfinal","l":"Chat"},{"p":"tfgfinal","l":"Client61"},{"p":"tfgfinal","l":"LogIn"},{"p":"tfgfinal","l":"Primary"},{"p":"tfgfinal","l":"TFGFinal"}];updateSearchResults();

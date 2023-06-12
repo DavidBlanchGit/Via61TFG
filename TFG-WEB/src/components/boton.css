@@ -1,0 +1,104 @@
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 10%);
+}
+
+button {
+	width: 200px;
+	height: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	background: #2c78fa;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+	background: #3083e9;
+  	padding-bottom: 10px;
+}
+
+button, button span {
+	transition: 200ms;
+}
+
+button .text {
+	transform: translateX(35px);
+	color: white;
+	font-weight: bold;
+}
+
+button .icon {
+	position: absolute;
+	border-left: 1px solid #3164be; 
+	transform: translateX(130px);
+	height: 40px;
+	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button svg {
+	width: 15px;
+	fill: #eee;
+}
+
+button:hover {
+	background: #4484f1;
+}
+
+button:hover .text {
+	color: transparent;
+}
+
+button:hover .icon {
+	width: 190px;
+	border-left: none;
+	transform: translateX(0);
+}
+
+button:focus {
+	outline: none;
+}
+
+.button-31 {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-31:hover,
+.button-31:focus {
+	background-color: #131313;
+}
