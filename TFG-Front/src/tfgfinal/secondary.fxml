@@ -42,17 +42,17 @@
             <DropShadow />
          </effect>
          <children>
-            <ImageView fx:id="img" fitHeight="35.0" fitWidth="59.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" styleClass="imagenPerfil">
+            <Text fx:id="namePersona" fill="WHITE" layoutX="190.0" layoutY="31.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="0.0" wrappingWidth="580.84375">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
                <effect>
                   <DropShadow />
                </effect>
-               <image>
-                  <Image url="@../imagenes/perfil.jpg" />
-               </image>
-            </ImageView>
-            <Text fx:id="namePersona" fill="WHITE" layoutX="102.0" layoutY="31.0" stroke="WHITE" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="0.0" text="Mustielo" wrappingWidth="632.84375">
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conectado con:">
                <font>
-                  <Font name="System Bold" size="20.0" />
+                  <Font name="Consolas Bold" size="20.0" />
                </font>
                <effect>
                   <DropShadow />

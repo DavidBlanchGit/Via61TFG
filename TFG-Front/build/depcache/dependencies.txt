@@ -123,7 +123,6 @@ java.lang.Exception
 java.net.HttpURLConnection
 javafx.scene.Scene
 java.lang.invoke.LambdaMetafactory
-java.lang.System
 java.net.URL
 javafx.scene.input.MouseEvent
 java.util.Scanner
@@ -133,7 +132,6 @@ tfgfinal.Chat
 com.fasterxml.jackson.databind.JsonNode
 java.lang.String
 tfgfinal.Chat$1
-java.io.PrintStream
 javafx.scene.input.KeyCode
 javafx.scene.control.TextField
 java.lang.invoke.MethodHandles$Lookup
@@ -145,11 +143,9 @@ tfgfinal.Client61
 java.lang.Exception
 javafx.scene.text.Text
 javafx.stage.Stage
-javafx.scene.image.ImageView
 java.lang.Object
 java.lang.StringBuilder
 java.lang.invoke.StringConcatFactory
-javafx.scene.image.Image
 ||:tfgfinal.CargaController
 javafx.scene.control.Button
 javafx.stage.StageStyle
@@ -222,13 +218,15 @@ java.lang.Object
 java.lang.Class
 ||:tfgfinal.Chat$1
 java.io.PrintStream
-javafx.scene.text.Text
 java.lang.invoke.MethodHandles$Lookup
+java.lang.System
+java.lang.invoke.MethodHandles
+tfgfinal.Client61
+javafx.scene.text.Text
 javafx.scene.control.ScrollPane
 tfgfinal.Chat
-java.lang.System
+javafx.scene.image.ImageView
 java.lang.Thread
-java.lang.invoke.MethodHandles
 java.lang.invoke.StringConcatFactory
-tfgfinal.Client61
+javafx.scene.image.Image
 tfgfinal.Chat$1

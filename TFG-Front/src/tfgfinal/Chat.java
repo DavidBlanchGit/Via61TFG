@@ -27,7 +27,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.json.JSONObject;
 
-public class Chat{
+public class Chat {
 
     @FXML
     private ImageView img;
@@ -104,28 +104,28 @@ public class Chat{
         new Thread() {
             @Override
             public void run() {
-                boolean bandera = true;
-                if (bandera = true) {
+                int contador = 1;
+                if (contador == 1) {
                     String mensaje = client61.recvBuffer();
                     nameChat = mensaje;
-                    mensaje = client61.recvBuffer();
-                    imgChat = mensaje;
-                    bandera = false;
+                    namePersona.setText(nameChat);
+                    contador++;
                 }
 
                 while (true) {
                     String mensaje = client61.recvBuffer();
-                    System.out.println(mensaje);
-                    datos = datos + "\n" + nameChat + ": " + "\n" + mensaje;
-                    textito.setText(datos);
-                    scrollPane.setVvalue(1.0);
-                }
+                System.out.println(mensaje);
+                datos = datos + "\n" + nameChat + ": " + "\n" + mensaje;
+                textito.setText(datos);
+                scrollPane.setVvalue(1.0);
             }
-        }.start();
+        }
     }
+    .start();
+}
 
-    /* Función para minimizar la pantalla */
-    @FXML
+/* Función para minimizar la pantalla */
+@FXML
     void minimizar(MouseEvent event) {
 
     }
@@ -138,20 +138,16 @@ public class Chat{
 
     void setProtonmail(String proton) {
         protonmail = proton;
-        System.out.println(protonmail);
 
         datosJson();
 
-        boolean bandera = true;
-        if (bandera = true) {
-            String mensaje = name;
+        int contador = 1;
+        if (contador == 1) {
             client61.sendBuffer(name);
-            client61.sendBuffer(imagenURL);
-            bandera = false;
+            contador++;
         }
         recibir();
-        namePersona.setText(nameChat);
-        img.setImage(new Image(imgChat));
+        
     }
 
     String name;
